@@ -13,4 +13,4 @@ No menos relevante ha sido la aplicación de los conocimientos en el diseño y g
 Información disponible en: https://www.rarcos.com/proyecto-integrado/
 
 ### Licencia
-[License about details](https://bitbucket.org/rubenarcos/java-hilos-puente-levadizo/src/master/license.md)
+[License about details](https://bitbucket.org/rubenarcos/gesmerca-c/src/master/license.md)
