@@ -3,6 +3,7 @@ All content is licensed under a Creative Commons Attribution 4.0 International L
  
 # GesMerca - Proyecto fin de ciclo (C#)
 Proyecto integrado fin del Ciclo Formativo de Grado Superior de Aplicaciones Multiplataformas.
+
 Integrated project for the Ciclo Formativo de Grado Superior de Aplicaciones Multiplataformas.
 
 ## Descripción / Description
@@ -19,7 +20,7 @@ Lea toda la información disponible antes de utilizar el software en: https://ra
 
 Read all info before use this software: https://rarcos.com/Proyecto_integrado/
 
-## Descarga del instalador
+## Descarga del instalador / Installer
 
 https://bitbucket.org/rubenarcos/gesmerca-c/downloads/
 
