@@ -18,5 +18,9 @@ No less relevant has been the application of knowledge in the design and managem
 Lea toda la información disponible antes de utilizar el software en: https://rarcos.com/Proyecto_integrado/
 Read all info before use this software: https://rarcos.com/Proyecto_integrado/
 
+## Descarga del instalador
+
+https://bitbucket.org/rubenarcos/gesmerca-c/downloads/
+
 ### Licencia / License
 [License about details](https://bitbucket.org/rubenarcos/gesmerca-c/src/master/license.md)
