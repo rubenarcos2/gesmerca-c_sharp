@@ -16,9 +16,9 @@ I have focused the application on the knowledge acquired about the management of
 No less relevant has been the application of knowledge in the design and management of relational databases and their implementation platforms. Another factor that has been taken into account has been the security of the environment of use and of the application, implementing features such as the physical blocking of the terminal, the encryption of sensitive data, or the prevention of the use of elements sensitive to the injection of automated information. (cracking or brute force attacks).
  
 ## Documentación / Documents
-Lea toda la información disponible antes de utilizar el software en: https://rarcos.com/Proyecto_integrado/
+Lea toda la información disponible antes de utilizar el software en: https://rarcos.com/2016/06/11/Proyecto_integrado/
 
-Read all info before use this software: https://rarcos.com/Proyecto_integrado/
+Read all info before use this software: https://rarcos.com/2016/06/11/Proyecto_integrado/
 
 ## Descarga del instalador / Installer
 
