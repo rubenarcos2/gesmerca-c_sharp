@@ -25,13 +25,13 @@ Read all info before use this software: [https://rarcos.com/2016/06/11/Proyecto_
 
 ## Descarga del instalador / Installer
 
-[https://github.com/rubenarcos2/proyecto_dam/installer](https://github.com/rubenarcos2/proyecto_dam/installer)
+[https://github.com/rubenarcos2/proyecto_dam/tree/master/installer](https://github.com/rubenarcos2/proyecto_dam/tree/master/installer)
 
 ## Puesta en funcionamiento / Starter
 
-La aplicación está parametrizada por defecto para la conexión a una base de datos externa alojada en internet. Es posible que presente algún tipo de retraso o sobrecarga ajena a la aplicación por disponibilidad del servicio, se ruega, si presenta algún mensaje informativo de falta de conexión se reintente pasado un tiempo o se realice la instalación local con el fichero [GesMerCa_Backup.sql](https://github.com/rubenarcos2/proyecto_dam/GesMerCa_Backup.sql). Una vez instalada la base de datos cambie la contraseña de esta en el fichero de configuración [app.config](https://github.com/rubenarcos2/proyecto_dam/app.config).
+La aplicación está parametrizada por defecto para la conexión a una base de datos externa alojada en internet. Es posible que presente algún tipo de retraso o sobrecarga ajena a la aplicación por disponibilidad del servicio, se ruega, si presenta algún mensaje informativo de falta de conexión se reintente pasado un tiempo o se realice la instalación local con el fichero [GesMerCa_Backup.sql](https://github.com/rubenarcos2/proyecto_dam/blob/master/GesMerCa_Backup.sql). Una vez instalada la base de datos cambie la contraseña de esta en el fichero de configuración [app.config](https://github.com/rubenarcos2/proyecto_dam/blob/master/GesMerCa/app.config).
 
-The application is parameterised by default for connection to an external database hosted on the internet. It is possible that it may present some kind of delay or overload external to the application due to the availability of the service, please, if it presents some informative message of lack of connection, try again after some time or perform the local installation with the file [GesMerCa_Backup.sql](https://github.com/rubenarcos2/proyecto_dam/GesMerCa_Backup.sql). Once the database is installed, change the database password in the configuration file [app.config](https://github.com/rubenarcos2/proyecto_dam/app.config).
+The application is parameterised by default for connection to an external database hosted on the internet. It is possible that it may present some kind of delay or overload external to the application due to the availability of the service, please, if it presents some informative message of lack of connection, try again after some time or perform the local installation with the file [GesMerCa_Backup.sql](https://github.com/rubenarcos2/proyecto_dam/blob/master/GesMerCa_Backup.sql). Once the database is installed, change the database password in the configuration file [app.config](https://github.com/rubenarcos2/proyecto_dam/blob/master/GesMerCa/app.config).
 
 ### Licencia / License
 
