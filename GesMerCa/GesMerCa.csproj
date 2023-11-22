@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68F112D7-89A6-45A8-82F5-69A91CC44798}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GesMerCa</RootNamespace>
+    <AssemblyName>GesMerCa</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>D:\PERSONAL\Formacion-Estudios\Desarrollo de aplicaciones multiplataforma\Segundo_curso\Proyecto integrado\GesMerCa\Setup_GesMerCa\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>https://bitbucket.org/rubenarcos/gesmerca-c/downloads/</UpdateUrl>
+    <SupportUrl>http://rubenarcos.net78.net/</SupportUrl>
+    <ErrorReportUrl>http://rubenarcos.net78.net/</ErrorReportUrl>
+    <ProductName>GesMerCa</ProductName>
+    <PublisherName>Rubén Arcos</PublisherName>
+    <SuiteName>Gestión de Recepcionamiento de Mercancías con Control de Acceso</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GesMerCa.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GesMerCa.Inicio</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>20DE35D3F0B4ABAF00CF7128236171B71530B9A1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GesMerCa_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GesMerCa_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gui\FrmAltaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmAltaProveedores.Designer.cs">
+      <DependentUpon>FrmAltaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmConfigAltaOpc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmConfigAltaOpc.Designer.cs">
+      <DependentUpon>FrmConfigAltaOpc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmAcercaDe.designer.cs">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmBloqueoAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmBloqueoAcceso.Designer.cs">
+      <DependentUpon>FrmBloqueoAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmRecepcionMercancia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmRecepcionMercancia.Designer.cs">
+      <DependentUpon>FrmRecepcionMercancia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmSeguridad.Designer.cs">
+      <DependentUpon>FrmSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmSplash.designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmProveedores.Designer.cs">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmAltaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmAltaUsuarios.Designer.cs">
+      <DependentUpon>FrmAltaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs" />
+    <Compile Include="Objs\OpcsGen.cs" />
+    <Compile Include="Properties\Resources.en.Designer.cs">
+      <DependentUpon>Resources.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utils\Const.cs" />
+    <Compile Include="Utils\Login.cs" />
+    <Compile Include="Objs\Proveedor.cs" />
+    <Compile Include="Objs\Usuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\CargaInicio.cs" />
+    <Compile Include="Utils\ConexionBD.cs" />
+    <Compile Include="Utils\Log.cs" />
+    <Compile Include="Utils\OperBD.cs" />
+    <Compile Include="Utils\Seguridad.cs" />
+    <Compile Include="Utils\Utilidades.cs" />
+    <EmbeddedResource Include="Gui\FrmAcercaDe.en.resx">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmAcercaDe.resx">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmAltaProveedores.en.resx">
+      <DependentUpon>FrmAltaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmAltaProveedores.resx">
+      <DependentUpon>FrmAltaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmAltaUsuarios.en.resx">
+      <DependentUpon>FrmAltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmBloqueoAcceso.en.resx">
+      <DependentUpon>FrmBloqueoAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmBloqueoAcceso.resx">
+      <DependentUpon>FrmBloqueoAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmConfig.en.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmConfigAltaOpc.en.resx">
+      <DependentUpon>FrmConfigAltaOpc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmConfigAltaOpc.resx">
+      <DependentUpon>FrmConfigAltaOpc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmLogin.en.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmRecepcionMercancia.en.resx">
+      <DependentUpon>FrmRecepcionMercancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmRecepcionMercancia.resx">
+      <DependentUpon>FrmRecepcionMercancia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmProductos.en.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmSeguridad.en.resx">
+      <DependentUpon>FrmSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmSeguridad.resx">
+      <DependentUpon>FrmSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmSplash.en.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmPrincipal.en.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmProveedores.en.resx">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmAltaUsuarios.resx">
+      <DependentUpon>FrmAltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmUsuarios.en.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GesMerCa_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Img\icon\dolly_grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GesMerCa.ico" />
+    <EmbeddedResource Include="Img\acercaDe.gif" />
+    <EmbeddedResource Include="Img\btnClose.png" />
+    <EmbeddedResource Include="Img\cargaInicio2.gif" />
+    <EmbeddedResource Include="Img\cargando.gif" />
+    <EmbeddedResource Include="Img\fondoAcercaDe.png" />
+    <EmbeddedResource Include="Img\foto_CV.png" />
+    <EmbeddedResource Include="Img\iconMensajeUsuario\Triangulo.png" />
+    <EmbeddedResource Include="Img\icon\AddNodefromFile_354.png" />
+    <Content Include="Resources\haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Img\icon\camera.png" />
+    <EmbeddedResource Include="Img\icon\cart.png" />
+    <EmbeddedResource Include="Img\icon\check.png" />
+    <EmbeddedResource Include="Img\icon\codebar.png" />
+    <EmbeddedResource Include="Img\icon\contacts.png" />
+    <EmbeddedResource Include="Img\icon\dolly.png" />
+    <EmbeddedResource Include="Img\icon\Filter.png" />
+    <EmbeddedResource Include="Img\icon\filtroOn.png" />
+    <EmbeddedResource Include="Img\icon\gear.ico" />
+    <EmbeddedResource Include="Img\icon\gear.png" />
+    <EmbeddedResource Include="Img\icon\key.ico" />
+    <EmbeddedResource Include="Img\icon\key.png" />
+    <EmbeddedResource Include="Img\icon\locked.png" />
+    <EmbeddedResource Include="Img\icon\magnifyingglass.png" />
+    <EmbeddedResource Include="Img\icon\profle.png" />
+    <EmbeddedResource Include="Img\icon\roadblock.png" />
+    <EmbeddedResource Include="Img\icon\saveHS.png" />
+    <EmbeddedResource Include="Img\icon\security.ico" />
+    <EmbeddedResource Include="Img\icon\security.png" />
+    <EmbeddedResource Include="Img\icon\settings.ico" />
+    <EmbeddedResource Include="Img\icon\settings.png" />
+    <EmbeddedResource Include="Img\icon\unlocked.png" />
+    <EmbeddedResource Include="Img\icon\usuarios\profile.bmp" />
+    <EmbeddedResource Include="Img\icon\usuarios\profile.png" />
+    <EmbeddedResource Include="Img\icon\usuarios\person-icon.png" />
+    <EmbeddedResource Include="Img\icon\icono-bloqueo.png" />
+    <EmbeddedResource Include="Img\icon\305_Close_16x16_72.png" />
+    <EmbeddedResource Include="Img\icon\ArrangeWindowsHS.BMP" />
+    <EmbeddedResource Include="Img\icon\base_picture_32.png" />
+    <EmbeddedResource Include="Img\icon\CascadeWindows.bmp" />
+    <EmbeddedResource Include="Img\icon\ClosePreviewHH.bmp" />
+    <EmbeddedResource Include="Img\icon\delete.png" />
+    <EmbeddedResource Include="Img\icon\Edit_Redo.bmp" />
+    <EmbeddedResource Include="Img\icon\Edit_Undo.bmp" />
+    <EmbeddedResource Include="Img\logoSanJose.png" />
+    <EmbeddedResource Include="Img\icon\help.png" />
+    <EmbeddedResource Include="Img\icon\SaveAll.bmp" />
+    <EmbeddedResource Include="Img\icon\SaveAsHH.bmp" />
+    <EmbeddedResource Include="Img\icon\TileVertically_2065_32.bmp" />
+    <EmbeddedResource Include="Img\icon\TileWindowsHorizontallyHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

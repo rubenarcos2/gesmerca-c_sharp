@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msgControlErroresUsuario" xml:space="preserve">
+    <value>Introduzca un nombre de usuario</value>
+  </data>
+  <data name="msgLoginErrorMaxIntentosTexto" xml:space="preserve">
+    <value>Ha excedido el número de intentos.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="roadblock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\roadblock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\usuarios\profile.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="base_picture_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\base_picture_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgInfoTTS_2" xml:space="preserve">
+    <value>Bienvenido </value>
+  </data>
+  <data name="msgLoginErrorTitulo" xml:space="preserve">
+    <value>Login inválido</value>
+  </data>
+  <data name="Close_16x16_72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\305_Close_16x16_72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\usuarios\profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgControlErroresPassword" xml:space="preserve">
+    <value>Introduzca una contraseña</value>
+  </data>
+  <data name="IconoMsgTriangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\iconMensajeUsuario\Triangulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foto_CV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\foto_CV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\SaveAll.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saveHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\saveHS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filtroOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\filtroOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TileVertically_2065_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\TileVertically_2065_32.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoSanJose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\logoSanJose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddNodefromFile_354" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\AddNodefromFile_354.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CascadeWindows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\CascadeWindows.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgLoginErrorMaxIntentosTitulo" xml:space="preserve">
+    <value>Excedido número de intentos</value>
+  </data>
+  <data name="contacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\contacts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\btnClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TileWindowsHorizontallyHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\TileWindowsHorizontallyHS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit_Undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\Edit_Undo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acercaDe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\acercaDe.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArrangeWindowsHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\ArrangeWindowsHS.BMP;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit_Redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\Edit_Redo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAsHH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\SaveAsHH.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unlocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\unlocked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\Filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoAcercaDe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\fondoAcercaDe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cargando" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\cargando.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgInfoTTS_1" xml:space="preserve">
+    <value>ha sido iniciado. Por favor, inicie sesión para comenzar</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dolly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\dolly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\profle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClosePreviewHH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon\ClosePreviewHH.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="security" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\security.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="msgLoginErrorTexto" xml:space="preserve">
+    <value>Usuario o contraseña inválidos.
+
+Dispone de {0} intentos.</value>
+  </data>
+  <data name="cargaInicio2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\cargaInicio2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnifyingglass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\magnifyingglass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnLoginGuardarImagen" xml:space="preserve">
+    <value>Guardar imagen</value>
+  </data>
+  <data name="msgAcercaDeTitulo" xml:space="preserve">
+    <value>Acerca de {0}</value>
+  </data>
+  <data name="msgCargaInicioErrorBD" xml:space="preserve">
+    <value>No se ha podido establecer conexión con la BD.
+
+¿Desea reintentar la conexión?</value>
+  </data>
+  <data name="msgCargaInicioErrorBDTitulo" xml:space="preserve">
+    <value>Error conexión BD</value>
+  </data>
+  <data name="msgCargaInicioErrorInternet" xml:space="preserve">
+    <value>No se ha podido establecer la conexión a Internet.
+
+¿Desea reintentar la conexión?</value>
+  </data>
+  <data name="msgCargaInicioErrorInternetTitulo" xml:space="preserve">
+    <value>Error conexión Internet</value>
+  </data>
+  <data name="msgCargaInicioFallida" xml:space="preserve">
+    <value>Fallida</value>
+  </data>
+  <data name="msgInicioErrorGeneral" xml:space="preserve">
+    <value>Se ha producido un error en la aplicación.
+
+Informe al administrador de sistemas fecha y hora para comprobar el registro.</value>
+  </data>
+  <data name="msgInicioErrorGeneralTitulo" xml:space="preserve">
+    <value>Error general</value>
+  </data>
+  <data name="msgLoginAlmacenarImagenCamara" xml:space="preserve">
+    <value>¿Desea continuar almacenando imágenes del usuario?</value>
+  </data>
+  <data name="msgLoginAlmacenarImagenCamaraTitulo" xml:space="preserve">
+    <value>Terminar de almacenar imágenes</value>
+  </data>
+  <data name="msgLoginErrorCargaOpciones" xml:space="preserve">
+    <value>Error en la carga de las opciones del usuario. Se utilizarán las generales</value>
+  </data>
+  <data name="msgLoginErrorCargaOpcionesTitulo" xml:space="preserve">
+    <value>Error en la carga de las opciones del usuario</value>
+  </data>
+  <data name="msgLoginErrorSinImagenUss" xml:space="preserve">
+    <value>Debe activarse en modo administración de rostros de usuarios.</value>
+  </data>
+  <data name="msgLoginErrorSinImagenUssTitulo" xml:space="preserve">
+    <value>Error en la detección de rostro</value>
+  </data>
+  <data name="msgLoginNuevaImagenUss" xml:space="preserve">
+    <value>Se ha añadido una nueva imagen del usuario.</value>
+  </data>
+  <data name="msgLoginNuevaImagenUssTitulo" xml:space="preserve">
+    <value>Imagen de usuario capturada</value>
+  </data>
+  <data name="msgLoginPersonaDesconocida" xml:space="preserve">
+    <value>Persona desconocida</value>
+  </data>
+  <data name="msgLoginPersonaDetectada" xml:space="preserve">
+    <value>Persona detectada</value>
+  </data>
+  <data name="msgObjUssError" xml:space="preserve">
+    <value>Usuario/Contraseña no puede ser null/vacío</value>
+  </data>
+  <data name="msgObjUssErrorTitulo" xml:space="preserve">
+    <value>Error creación usuario</value>
+  </data>
+  <data name="msgOperBDErrorModulo" xml:space="preserve">
+    <value>Ya existe un módulo con el nombre indicado</value>
+  </data>
+  <data name="msgOperBDErrorModuloTitulo" xml:space="preserve">
+    <value>Creación módulos de restricción de acceso</value>
+  </data>
+  <data name="msgPrincipalSalir" xml:space="preserve">
+    <value>¿Desea Salir de la Aplicacion?</value>
+  </data>
+  <data name="msgPrincipalSalirTitulo" xml:space="preserve">
+    <value>Salir de la aplicación</value>
+  </data>
+  <data name="msgSplashCargandoElementos" xml:space="preserve">
+    <value>Cargando elementos de la aplicación...</value>
+  </data>
+  <data name="msgSplashCargandoOpcsGen" xml:space="preserve">
+    <value>Cargando opciones generales de la aplicación...</value>
+  </data>
+  <data name="msgSplashCheckBD" xml:space="preserve">
+    <value>Comprobando conexión BD...</value>
+  </data>
+  <data name="msgSplashCheckInternet" xml:space="preserve">
+    <value>Comprobando acceso a internet...</value>
+  </data>
+  <data name="msgSplashErrorCarga" xml:space="preserve">
+    <value>Se ha producido un error en la carga de la aplicación.
+Inténtelo de nuevo más tarde.</value>
+  </data>
+  <data name="msgSplashErrorCargaTitulo" xml:space="preserve">
+    <value>Error en la carga de la aplicación.</value>
+  </data>
+  <data name="codebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\icon\codebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnActivar" xml:space="preserve">
+    <value>Activar</value>
+  </data>
+  <data name="btnEliminar" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnGuardar" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="btnModificar" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="cmbRolUsuario" xml:space="preserve">
+    <value>Rol usuario</value>
+  </data>
+  <data name="msgAbrirImagenUsuario" xml:space="preserve">
+    <value>JPEG imágenes (*.jpeg)|*.jpeg|PNG imágenes (*.png)|*.png|JPG imágenes (*.jpg)|*.jpg|GIF imágenes (*.gif)|*.gif|Todos los archivos|*.*</value>
+  </data>
+  <data name="msgAbrirImagenUsuarioTitulo" xml:space="preserve">
+    <value>Abrir imagen usuario</value>
+  </data>
+  <data name="msgAltaOpcSinModificaciones" xml:space="preserve">
+    <value>No se ha modificado ningún registro de la base de datos</value>
+  </data>
+  <data name="msgAltaOpcValoresDominio" xml:space="preserve">
+    <value>Los valores de dominio deben estar separados por ;</value>
+  </data>
+  <data name="msgBloqueoAccesoIntroDesblq" xml:space="preserve">
+    <value>Introduzca sus credenciales para desbloquear el terminal</value>
+  </data>
+  <data name="msgBloqueoAccesoTTSInfo" xml:space="preserve">
+    <value>Este terminal ha sido bloqueado. Introduzca su clave de acceso para desbloquearlo.</value>
+  </data>
+  <data name="msgConfigOpcErrorGrabacion" xml:space="preserve">
+    <value>Se ha producido un error en la grabación de la nueva opción de usuario, inténtelo de nuevo</value>
+  </data>
+  <data name="msgConfigOpcErrorGrabacionTitulo" xml:space="preserve">
+    <value>Error grabación nueva opción</value>
+  </data>
+  <data name="msgConfigOpcOK" xml:space="preserve">
+    <value>Se ha grabado la opción correctamente</value>
+  </data>
+  <data name="msgConfigOpcOKTitulo" xml:space="preserve">
+    <value>Opción modificada</value>
+  </data>
+  <data name="msgConfigOpcUsuario" xml:space="preserve">
+    <value>Las opciones del usuario que no se hayan personalizado, corresponderán a las generales</value>
+  </data>
+  <data name="msgConfigOpcUsuarioTitulo" xml:space="preserve">
+    <value>Opciones de usuario</value>
+  </data>
+  <data name="msgControlErrorAltaOpcDescripcion" xml:space="preserve">
+    <value>Debe contener una descripción para la opción</value>
+  </data>
+  <data name="msgControlErrorAltaOpcDominio" xml:space="preserve">
+    <value>Debe contener el rango de valores de la opción</value>
+  </data>
+  <data name="msgControlErrorAltaOpcPropiedad" xml:space="preserve">
+    <value>Debe contener el nombre de la opción</value>
+  </data>
+  <data name="msgControlErrorAltaOpcTitulo" xml:space="preserve">
+    <value>Debe contener el título de la opción</value>
+  </data>
+  <data name="msgControlErrorAltaOpcValor" xml:space="preserve">
+    <value>Debe contener un valor incial de la opción</value>
+  </data>
+  <data name="msgEliminarUsuario" xml:space="preserve">
+    <value>¿Está seguro que desea eliminar el usuario </value>
+  </data>
+  <data name="msgEliminarUsuarioTitulo" xml:space="preserve">
+    <value>Eliminar usuario</value>
+  </data>
+  <data name="msgGuardarCambiosUsuario" xml:space="preserve">
+    <value>¿Está seguro que desea guardar los cambios del usuario </value>
+  </data>
+  <data name="msgGuardarCambiosUsuarioTitulo" xml:space="preserve">
+    <value>Modificar usuario</value>
+  </data>
+  <data name="msgGuardarImagenesLoginFacial" xml:space="preserve">
+    <value>Se ha detectado que hay imágenes del usuario anteriores almacenadas en el sistema.
+¿Desea eliminarlas y así reiniciar el sistema de reconocimiento?</value>
+  </data>
+  <data name="msgGuardarImagenesLoginFacialTitulo" xml:space="preserve">
+    <value>Reinicio del sistema de reconocimiento</value>
+  </data>
+  <data name="msgLoginCodigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="msgNuevaOpcionOK" xml:space="preserve">
+    <value>La nueva opción se ha grabado correctamente</value>
+  </data>
+  <data name="msgSeguridadEliminarRestriccion" xml:space="preserve">
+    <value>Eliminar esta restricción implica que todos los usuarios, la perderán también.
+Quedando este módulo visible a todos.
+
+¿Desea continuar con la eliminación de la restricción?
+(Se cerrará esta ventana para hacer efectivo los cambios)</value>
+  </data>
+  <data name="msgSeguridadEliminarRestriccionTitulo" xml:space="preserve">
+    <value>Eliminación de restricción global</value>
+  </data>
+  <data name="msgSeguridadRestriccionRepetida" xml:space="preserve">
+    <value>Ya se ha asignado la restricción seleccionada al rol</value>
+  </data>
+  <data name="msgSeguridadRestriccionRepetidaTitulo" xml:space="preserve">
+    <value>Restricción asignada</value>
+  </data>
+  <data name="msgSeleccionarUsuario" xml:space="preserve">
+    <value>Por favor, seleccione el usuario para aplicar la acción.</value>
+  </data>
+  <data name="msgSeleccionarUsuarioTitulo" xml:space="preserve">
+    <value>Usuario no identificado</value>
+  </data>
+  <data name="msgTerminalBloqueado" xml:space="preserve">
+    <value>Se ha bloqueado el terminal</value>
+  </data>
+  <data name="msgUsuariosErrorDatosBD" xml:space="preserve">
+    <value>Error datos usuarios, error BD:</value>
+  </data>
+  <data name="msgUsuariosErrorDatosBDTitulo" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="msgUsuariosErrorDatosGeneralBD" xml:space="preserve">
+    <value>Error general datos usuarios, error BD:</value>
+  </data>
+  <data name="msgVentana" xml:space="preserve">
+    <value>Ventana </value>
+  </data>
+  <data name="msgAltaProveedorCif" xml:space="preserve">
+    <value>CIF no válido</value>
+  </data>
+  <data name="msgAltaProveedorError" xml:space="preserve">
+    <value>No se ha modificado ningún registro de la base de datos</value>
+  </data>
+  <data name="msgAltaProveedorErrorCif" xml:space="preserve">
+    <value>Debe contener un CIF/NIF</value>
+  </data>
+  <data name="msgAltaProveedorErrorCifValido" xml:space="preserve">
+    <value>Debe contener un CIF válido</value>
+  </data>
+  <data name="msgAltaProveedorErrorDireccion" xml:space="preserve">
+    <value>Debe contener una dirección</value>
+  </data>
+  <data name="msgAltaProveedorErrorEmail" xml:space="preserve">
+    <value>No ha includo un email</value>
+  </data>
+  <data name="msgAltaProveedorErrorObs" xml:space="preserve">
+    <value>No ha incluido ninguna observación</value>
+  </data>
+  <data name="msgAltaProveedorErrorProv" xml:space="preserve">
+    <value>Debe contener el nombre del proveedor</value>
+  </data>
+  <data name="msgAltaProveedorErrorTlf" xml:space="preserve">
+    <value>No ha incluido un téléfono</value>
+  </data>
+  <data name="msgAltaProveedorErrorWeb" xml:space="preserve">
+    <value>No ha incluido página web</value>
+  </data>
+  <data name="msgAltaProveedorNif" xml:space="preserve">
+    <value>NIF no válido</value>
+  </data>
+  <data name="msgAltaProveedorOK" xml:space="preserve">
+    <value>El nuevo proveedor ha sido grabado correctamente</value>
+  </data>
+  <data name="msgAltaUsuario" xml:space="preserve">
+    <value>Se ha creado el usuario, ID: {0}</value>
+  </data>
+  <data name="msgAltaUsuarioComp" xml:space="preserve">
+    <value>Compruebe los datos del usuario</value>
+  </data>
+  <data name="msgAltaUsuarioCompTitulo" xml:space="preserve">
+    <value>Datos incorrectos o insuficiones</value>
+  </data>
+  <data name="msgAltaUsuarioErrorEmail" xml:space="preserve">
+    <value>La dirección de email es inválida</value>
+  </data>
+  <data name="msgAltaUsuarioErrorLogin" xml:space="preserve">
+    <value>Ya existe un usuario con este nombre de usuario</value>
+  </data>
+  <data name="msgAltaUsuarioErrorPass" xml:space="preserve">
+    <value>Las contraseñas no coinciden</value>
+  </data>
+  <data name="msgTerminalBloqueadoTiempo" xml:space="preserve">
+    <value>Este terminal ha sido bloqueado. Transcurridos {0} minutos y {1} segundos será desbloqueado</value>
+  </data>
+  <data name="msgTerminalDisponibleTiempo" xml:space="preserve">
+    <value>El terminal volverá a estar disponible en ... {0} m. {1} s.</value>
+  </data>
+  <data name="haarcascade_frontalface_default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\haarcascade_frontalface_default.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+</root>
